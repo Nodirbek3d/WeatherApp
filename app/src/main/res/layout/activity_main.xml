@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/background_croped"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/background_image_description"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/background_image_description"/>
+        app:srcCompat="@drawable/ic_background" />
 
     <TextView
         android:id="@+id/textView"
@@ -24,7 +24,7 @@
         android:layout_marginStart="8dp"
         android:text="TextView"
         android:textSize="35sp"
-        android:textColor="@color/primary_light"
+        android:textColor="@color/primary_text"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -38,7 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/ic_sunny_day_weather_symbol"
-        android:tint="@color/primary_light"
+        android:tint="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
